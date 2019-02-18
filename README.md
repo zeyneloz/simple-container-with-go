@@ -5,5 +5,7 @@ This is a very basic example of how docker creates the containers using linux na
 
 ## TL;DR
 - Clone git repo
-- run `go run engine.go run /bin/sh`
-- then you will have a ssh connection in to the container
+- run `mkdir rootfs`
+- run `tar xvf rootfs.tar -C rootfs`
+- Now you are ready to run the container: `go run engine.go run /bin/sh`
+- then you will have a ssh connection in to the container.
